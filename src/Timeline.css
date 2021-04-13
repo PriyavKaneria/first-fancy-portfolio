@@ -1,0 +1,180 @@
+/* Variables */
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+.work {
+	position: relative;
+	height: auto;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5;
+	letter-spacing: 0.05em;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	background: linear-gradient(to bottom, #d5d5d5, #f1f1f1);
+}
+
+.work::-webkit-scrollbar {
+	display: none;
+}
+
+/* Styling */
+.timeline {
+	margin: 4em auto 4em auto;
+	position: relative;
+	max-width: 46em;
+	list-style: none;
+	height: fit-content;
+	right: 10vw;
+	z-index: 2;
+}
+
+.timeline:before {
+	background-color: black;
+	content: "";
+	margin-left: -1px;
+	position: absolute;
+	top: 0;
+	left: 4.5em;
+	width: 2px;
+	height: 100%;
+}
+
+.timeline-event {
+	position: relative;
+}
+.timeline-event:hover .timeline-event-icon {
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background-color: #a83279;
+}
+.timeline-event:hover .timeline-event-thumbnail {
+	-moz-box-shadow: inset 40em 0 0 0 #a83279;
+	-webkit-box-shadow: inset 40em 0 0 0 #a83279;
+	box-shadow: inset 40em 0 0 0 #a83279;
+}
+
+.timeline-event-copy {
+	padding: 1em 2em 0em 2em;
+	position: relative;
+	top: -1.875em;
+	left: 4em;
+	width: 80%;
+}
+.timeline-event-copy h3 {
+	font-size: 1.75em;
+}
+.timeline-event-copy h4 {
+	font-size: 1.2em;
+	margin-bottom: 1.2em;
+}
+.timeline-event-copy strong {
+	font-weight: 700;
+}
+.timeline-event-copy p:not(.timeline-event-thumbnail) {
+	padding-bottom: 1.2em;
+}
+
+.timeline-event-icon {
+	-moz-transition: -moz-transform 0.2s ease-in;
+	-o-transition: -o-transform 0.2s ease-in;
+	-webkit-transition: -webkit-transform 0.2s ease-in;
+	transition: transform 0.2s ease-in;
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background-color: black;
+	outline: 10px solid white;
+	display: block;
+	margin: 0.5em 0.5em 0.5em -0.5em;
+	position: absolute;
+	top: 0;
+	left: 2em;
+	width: 1em;
+	height: 1em;
+}
+
+.timeline-event-thumbnail {
+	-moz-transition: box-shadow 0.5s ease-in 0.1s;
+	-o-transition: box-shadow 0.5s ease-in 0.1s;
+	-webkit-transition: box-shadow 0.5s ease-in;
+	-webkit-transition-delay: 0.1s;
+	transition: box-shadow 0.5s ease-in 0.1s;
+	color: white;
+	font-size: 0.75em;
+	background-color: black;
+	-moz-box-shadow: inset 0 0 0 0em #ef795a;
+	-webkit-box-shadow: inset 0 0 0 0em #ef795a;
+	box-shadow: inset 0 0 0 0em #ef795a;
+	display: inline-block;
+	margin-bottom: 1.2em;
+	padding: 0.25em 1em 0.2em 1em;
+}
+
+.heading {
+	position: absolute;
+	left: 10vw;
+	font-size: 10rem;
+	z-index: 2;
+}
+
+.heading-resp {
+	display: none;
+}
+
+.skeleton {
+	display: block;
+	height: 100%;
+	width: 100%;
+	background-image: url("./TreeFrames/69.png");
+	background-repeat: no-repeat;
+	background-position-x: 200px;
+}
+
+.scrollmagic-pin-spacer {
+	top: 0vh !important;
+	width: 100vw !important;
+	height: 100vh !important;
+}
+
+.ImageSequence {
+	position: absolute;
+	width: 60vw;
+	top: -25vh;
+	right: 0vw;
+	height: 100vh;
+	z-index: 1;
+}
+
+@media screen and (max-width: 900px) {
+	.heading {
+		display: none;
+	}
+	.heading-resp {
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 20vw;
+		font-size: 2.5rem;
+	}
+	.timeline {
+		margin: 5em auto 4em 1em;
+	}
+	.ImageSequence {
+		width: 100vw;
+		top: -50vh;
+	}
+	.skeleton {
+		background-position-x: 0;
+	}
+}

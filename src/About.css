@@ -1,0 +1,186 @@
+.About {
+	position: relative;
+	text-align: center;
+	width: 100vw;
+	min-width: 350px;
+	height: 100vh;
+	/* background-color: #d4d4d4; */
+	background: linear-gradient(to top, #d4d4d4 90%, #828282);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+	display: flex;
+	align-content: flex-start;
+	flex-direction: row;
+}
+
+.aboutImage {
+	font-size: 15rem;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+.aboutContent {
+	margin: 60px;
+	font: normal 1rem JetBrains Mono;
+	text-align: left;
+	color: #2c2c2c;
+	/* backdrop-filter: blur(2px); */
+}
+
+.hero {
+	height: 100vh;
+	position: absolute;
+	width: 100vw;
+}
+
+.mask {
+	clip-path: circle(0px);
+}
+
+.hiddenContent {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: #d4d4d4;
+}
+
+.overlayleft .o-circle {
+	position: absolute;
+	top: 30vh;
+	left: 5.5vw;
+}
+
+.overlayleft .o-bolt {
+	position: absolute;
+	top: 13vh;
+	left: 42vw;
+	width: 30px;
+	transform: rotate(40deg);
+}
+
+.overlayleft .o-heart {
+	position: absolute;
+	top: 25vh;
+	left: 4vw;
+	width: 36px;
+	transform: rotate(-24.98deg);
+}
+
+.overlayleft .o-joystick {
+	position: absolute;
+	top: 82vh;
+	left: 16vw;
+	width: 50px;
+	transform: rotate(-24.47deg);
+}
+
+.overlayleft .o-stroke3 {
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	width: 100px;
+	filter: opacity(0.5);
+}
+
+.overlayright .o-swirl {
+	position: absolute;
+	top: 20vh;
+	right: 15vw;
+	width: 40px;
+}
+
+.overlayright .o-stroke4 {
+	position: absolute;
+	top: 80vh;
+	right: 23vw;
+	width: 80px;
+	transform: rotate(10deg);
+}
+
+.overlayright .o-stroke2 {
+	position: absolute;
+	top: 9vh;
+	right: 2vw;
+	width: 120px;
+	transform: rotate(32deg);
+}
+
+.overlayright .o-stroke1 {
+	position: absolute;
+	bottom: 0;
+	right: 15px;
+	width: 180px;
+	transform: scaleX(-1);
+}
+
+/* RESPONSIVENESS */
+
+@media only screen and (max-width: 870px) {
+	.About {
+		flex-direction: column;
+	}
+	.aboutContent {
+		margin-top: 0;
+		font-size: 0.8rem;
+	}
+	.aboutImage {
+		margin: 0;
+		font-size: calc(85px + 11vw);
+	}
+	.overlayleft .o-circle {
+		top: 16vw;
+		width: 30vw;
+		min-width: 120px;
+		left: max(35vw,111px);
+	}
+
+	.overlayleft .o-bolt {
+		position: absolute;
+		top: 3vh;
+		right: 20vw;
+		left: unset;
+	}
+
+	.overlayleft .o-heart {
+		top: 20vh;
+	}
+
+	.overlayleft .o-joystick {
+		left: 4vw;
+	}
+
+	.overlayleft .o-stroke3 {
+		left: 20vw;
+	}
+
+	.overlayright .o-swirl {
+		top: 30vh;
+	}
+
+	.overlayright .o-stroke4 {
+		top: 55vh;
+		right: 4vw;
+		width: 40px;
+	}
+
+	.overlayright .o-stroke2 {
+		top: 75vh;
+		right: 8vw;
+		width: 50px;
+	}
+
+	.overlayright .o-stroke1 {
+		width: 90px;
+	}
+}
+
+@media screen and (max-width: 370px){
+	.overlayleft .o-circle {
+		top: 2vh;
+	}
+}

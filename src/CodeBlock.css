@@ -1,0 +1,68 @@
+.code-container {
+	position: absolute;
+	top: 10vh;
+	left: 5vw;
+	width: 30vw;
+	min-width: fit-content;
+	height: 20vh;
+	background-color: black;
+	border-radius: 15px;
+	box-shadow:  16px 16px 32px #000000,
+        -16px -16px 32px #424242;
+}
+
+@media screen and (max-width: 600px) {
+	.code-container {
+		width: 80%;
+		height: fit-content;
+	}
+}
+
+.code {
+	position: relative;
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	width: calc(100% - 30px);
+	height: calc(100% - 38px);
+	font-size: 0.8em;
+	text-align: left;
+}
+
+.menubar {
+	display: flex;
+	flex-direction: row;
+}
+
+.close {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	border-radius: 50%;
+	background-color: #ff5f56;
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+}
+
+.tab {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	border-radius: 50%;
+	background-color: #ffbd2e;
+	width: 13px;
+	height: 13px;
+	margin-right: 5px;
+}
+
+.minimize {
+	position: relative;
+	top: 10px;
+	left: 10px;
+	border-radius: 50%;
+	background-color: #27c93f;
+	width: 13px;
+	height: 13px;
+}
