@@ -1,0 +1,152 @@
+.LnC {
+	position: relative;
+	width: auto;
+	height: fit-content;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #868686, #303030);
+	display: flex;
+	flex-direction: column;
+}
+
+.fullsize {
+	position: relative;
+	width: 100%;
+}
+
+.languages {
+	position: relative;
+	padding: 10%;
+	padding-top: 0;
+	font-size: 2rem;
+	font-variant: small-caps;
+}
+
+.contact {
+	position: relative;
+	display: inline-block;
+	width: fit-content;
+	height: 50px;
+	left: 10%;
+}
+
+.typer {
+	position: relative;
+    width: auto;
+    height: 100px;
+}
+
+.small-title {
+	position: relative;
+	padding-top: 10%;
+	padding-left: 10%;
+	font-variant: small-caps;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.languages i {
+	position: absolute;
+	font-size: 1rem;
+}
+
+.subtype {
+	font-size: 1.3rem;
+}
+
+.icon {
+	float: left;
+	position: relative;
+	width: 50px;
+	height: auto;
+	margin-right: 10px;
+	padding-bottom: 19%;
+}
+.icon a {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border-radius: 10px;
+	background-color: #fff;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 0.2s ease-out;
+}
+.icon a:hover {
+	/* background-color: rgb(207, 207, 207); */
+	/* background-size: 0%; */
+	transition: all 0.2s ease-out;
+}
+
+.icon__name {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: rgb(255, 255, 255);
+	font-size: 0.5rem;
+	vertical-align: middle;
+	text-align: center;
+	transition: all 0.3s ease-out;
+	opacity: 0;
+	transform: translateZ(0);
+	will-change: transform;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.icon:hover .icon__name {
+	transition: all 0.3s ease-out;
+	opacity: 1;
+	filter: blur(0);
+	backdrop-filter: blur(2px);
+}
+
+.icon--linkedin a {
+	background-image: url("./imgs/LinkedIn.svg");
+	background-color: transparent;
+	background-size: contain;
+}
+
+.icon--github a {
+	background-image: url("./imgs/GitHub.svg");
+	background-color: transparent;
+	background-size: contain;
+}
+
+.icon--gitlab a {
+	background-image: url("./imgs/Gitlab.svg");
+	background-color: transparent;
+	background-size: contain;
+}
+
+.icon--gmail a {
+	background-image: url("./imgs/Gmail.svg");
+	background-color: transparent;
+	background-size: contain;
+}
+
+.hover:hover {
+	filter: blur(2px);
+}
+
+.override-plane {
+	position: absolute;
+	top: 0;
+	right: -100px;
+}
+
+@media screen and (max-width:768px) {
+	.languages{
+		font-size: 1.5rem;
+	}
+	.subtype{
+		font-size: 1rem;
+	}
+	.LnC{
+		min-height: 67vh;
+	}
+}

@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Orbitron&display=swap');
+
+.education {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	min-height: fit-content;
+	background-color: #f1f1f1;
+	overflow: hidden;
+}
+
+.title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 3%;
+	margin-left: 5%;
+	font: small-caps italic 5em black;
+	font-family: 'Cinzel', serif;
+	font-weight: 800;
+	text-shadow: 2px 2px grey;
+}
+
+.ps-timeline-sec {
+	position: relative;
+	background: #f1f1f1;
+	width: 90vw;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: 'Orbitron', sans-serif;
+	font-variant: small-caps;
+}
+
+.ps-timeline-sec .container {
+	position: relative;
+}
+
+.ps-timeline {
+	display: flex;
+	flex-direction: row;
+}
+
+.ps-timeline-sec .container ol:before {
+	background: #000000;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	position: absolute;
+	left: 0px;
+	top: -5px;
+	z-index: 2;
+}
+
+.ps-timeline-sec .container ol:after {
+	background: #000000;
+	content: "";
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline {
+	margin: 40% 0;
+	padding: 0;
+	border-top: 2px solid #a4a4a4;
+	list-style: none;
+	background-color: #f1f1f1;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li {
+	position: relative;
+	width: 33.3333%;
+	padding-top: 30px;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span {
+	width: 50px;
+	height: 50px;
+	margin-left: -25px;
+	background: #fff;
+	border: 2px solid #000000;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0px #fff;
+	text-align: center;
+	line-height: 50px -10;
+	color: #000000;
+	font-size: 2em;
+	font-style: normal;
+	position: absolute;
+	top: -26px;
+	left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top {
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 2rem;
+	box-shadow: 11px 11px 30px #bababa, -11px -11px 30px #ffffff;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+	content: "";
+	color: #a4a4a4;
+	width: 2px;
+	height: 45px;
+	background: #a4a4a4;
+	position: absolute;
+	top: -50px;
+	left: 50%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
+	content: "";
+	color: #a4a4a4;
+	width: 8px;
+	height: 8px;
+	background: #000000;
+	position: absolute;
+	bottom: 100px;
+	left: 44%;
+	border-radius: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 130px;
+	width: 100%;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+	display: table;
+	margin: 0 auto;
+	-webkit-filter: drop-shadow(3px 3px 0 #b4b4b4) drop-shadow(-3px -3px 0 #b4b4b4);
+	filter: drop-shadow(3px 3px 0 #b4b4b4) drop-shadow(-3px -3px 0 #b4b4b4);
+}
+
+.ps-timeline-sec .container ol.ps-timeline li p {
+	position: relative;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	top: 10%;
+	align-content: center;
+	vertical-align: middle;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+}
+
+.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+	position: absolute;
+	margin: 10px 15px 15px 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 80%;
+	height: 80px;
+	border-radius: 10px;
+	box-shadow: inset 6px 6px 12px #d2d2d2, inset -6px -6px 12px #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+	.title {
+		font-size: 3em;
+	}
+	.ps-timeline-sec .container ol:before {
+		background: #a4a4a4;
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		position: absolute;
+		bottom: -5px;
+		left: 20px;
+		top: unset;
+	}
+
+	.ps-timeline {
+		flex-direction: column;
+	}
+
+	.ps-timeline-sec .container ol:after {
+		background: #a4a4a4;
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		position: absolute;
+		left: 21px;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline {
+		margin: 100px 0;
+		border-left: 2px solid #a4a4a4;
+		padding-left: 0;
+		padding-top: 120px;
+		border-top: 0;
+		margin-left: 25px;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li {
+		height: 22vh;
+		float: none;
+		width: inherit;
+	}
+
+	.ps-timeline-sec
+		.container
+		ol.ps-timeline
+		li:nth-child(2)
+		.img-handler-bot
+		img {
+		width: 70px;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li:last-child {
+		margin: 0;
+		bottom: 0;
+		height: 120px;
+	}
+
+	.ps-timeline-sec
+		.container
+		ol.ps-timeline
+		li:last-child
+		.img-handler-bot
+		img {
+		width: 100%;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li span {
+		left: 0;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:before {
+		content: none;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li span.ps-sp-top:after {
+		content: none;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li .img-handler-top {
+		position: absolute;
+		top: -30px;
+		width: 30%;
+		float: left;
+		margin-left: 5px;
+		margin-bottom: 0;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li .img-handler-top img {
+		margin: 0 auto;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li p {
+		text-align: left;
+		width: 100%;
+		margin: 0 auto;
+		margin-top: 0px;
+	}
+
+	.ps-timeline-sec .container ol.ps-timeline li .ps-bot {
+		width: 60%;
+		float: right;
+		right: 0;
+		top: -40px;
+	}
+}
