@@ -1,10 +1,10 @@
 import Aos from "aos"
 import "aos/dist/aos.css"
 import "./Education.css"
-import College from "./imgs/College.png"
+import College from "./imgs/College-min.png"
 import CollegeIcon from "./imgs/CollegeIcon.svg"
-import School2 from "./imgs/School+2.png"
-import School from "./imgs/School.png"
+import School2 from "./imgs/School+2-min.png"
+import School from "./imgs/School-min.png"
 
 let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
 
@@ -59,7 +59,7 @@ function Education() {
 							</div>
 							<div className='ps-bot' data-aos='zoom-in' data-aos-delay='200'>
 								<p>
-									<b>2006-2018</b>
+									<b>2017-2018</b>
 									<br />
 									<b>K</b>okilaben <b>D</b>hirubhai <b>A</b>mbani <b>V</b>
 									idyamandir
@@ -78,7 +78,7 @@ function Education() {
 							</div>
 							<div className='ps-bot' data-aos='zoom-in' data-aos-delay='400'>
 								<p>
-									<b>2018-2020</b>
+									<b>2019-2020</b>
 									<br />
 									<b>K</b>okilaben <b>D</b>hirubhai <b>A</b>mbani <b>V</b>
 									idyamandir

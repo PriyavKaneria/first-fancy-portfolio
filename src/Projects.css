@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 .projects {
 	position: relative;
 	width: 100vw;
@@ -32,10 +34,56 @@
 	height: 40%;
 	background-color: #00000041;
 	transition: all 0.5s ease-in-out;
+	backdrop-filter: blur(1px);
 }
 
 .project-detail:hover {
 	background-color: #000000b9;
+	color: white;
+}
+
+.project-title {
+	position: relative;
+	width: auto;
+	text-align: center;
+	height: 20%;
+	font: 600 1em Montserrat;
+	margin: 5%;
+	margin-bottom: 1%;
+}
+
+.project-context {
+	position: relative;
+	width: auto;
+	height: auto;
+	max-height: 50%;
+	font: 400 0.9em Montserrat;
+	margin: 5%;
+	margin-top: 1%;
+}
+
+.project-github {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url(./imgs/TechIcons/github-icon-white.png);
+}
+
+.project-link {
+	position: absolute;
+	right: 50px;
+	bottom: 10px;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	background-image: url(./imgs/TechIcons/Link-icon.png);
+}
+
+.text-white{
+	color: white;
 }
 
 .bulb {
@@ -80,5 +128,10 @@
 	.override-title {
 		top: 6%;
 		left: 10%;
+	}
+
+	.project-detail {
+		background-color: #000000b9;
+		color: white;
 	}
 }

@@ -1,6 +1,6 @@
 .LnC {
 	position: relative;
-	width: auto;
+	width: 100vw;
 	height: fit-content;
 	min-height: 100vh;
 	background: linear-gradient(to bottom, #868686, #303030);

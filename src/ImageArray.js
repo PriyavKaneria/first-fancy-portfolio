@@ -1,4 +1,4 @@
-import { Tree } from "./TreeFrames";
+import { Tree } from "./TreeFrames-min";
 import { useImage } from "./hooks";
 
 const TreeArray = () => {

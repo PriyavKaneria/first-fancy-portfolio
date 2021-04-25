@@ -1,5 +1,5 @@
 import "./Navbar.css"
-import HomeMe from "./HomeMe.png"
+import HomeMe from "./imgs/HomeMe.png"
 
 function Navbar() {
 	window.onload = function () {
