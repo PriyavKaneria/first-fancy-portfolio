@@ -19,14 +19,21 @@
 }
 
 .aboutImage {
-	font-size: 15rem;
 	margin-left: 50px;
 	margin-right: 20px;
 }
 
+.aboutMe {
+	width: 300px;
+	height: 367px;
+	transform: scaleX(-1);
+	margin-bottom: -2vh;
+	clip-path: circle(184px);
+}
+
 .aboutContent {
 	margin: 60px;
-	font: normal 1rem JetBrains Mono;
+	font: normal 1.3rem JetBrains Mono;
 	text-align: left;
 	color: #2c2c2c;
 	/* backdrop-filter: blur(2px); */
@@ -51,8 +58,10 @@
 
 .overlayleft .o-circle {
 	position: absolute;
-	top: 30vh;
-	left: 5.5vw;
+    top: 130px;
+    width: 385px;
+    height: 58vh;
+    left: 18px;
 }
 
 .overlayleft .o-bolt {
@@ -65,8 +74,8 @@
 
 .overlayleft .o-heart {
 	position: absolute;
-	top: 25vh;
-	left: 4vw;
+	top: 23vh;
+	left: 3vw;
 	width: 36px;
 	transform: rotate(-24.98deg);
 }
@@ -77,6 +86,14 @@
 	left: 16vw;
 	width: 50px;
 	transform: rotate(-24.47deg);
+}
+
+.overlayleft .o-aot {
+	position: absolute;
+	top: 75vh;
+	left: 46vw;
+	width: 60px;
+	transform: rotate(14.47deg);
 }
 
 .overlayleft .o-stroke3 {
@@ -126,17 +143,27 @@
 	}
 	.aboutContent {
 		margin-top: 0;
-		font-size: 0.8rem;
+		font-size: 1em;
 	}
 	.aboutImage {
 		margin: 0;
-		font-size: calc(85px + 11vw);
+	}
+	.overlayleft {
+		width: 0;
+		height: 0;
+	}
+	.aboutMe {
+		width: calc(85px + 11vw);
+		height: auto;
+		margin-bottom: 30px;
+		clip-path: circle(calc(70px + 2vw));
 	}
 	.overlayleft .o-circle {
-		top: 16vw;
-		width: 30vw;
-		min-width: 120px;
-		left: max(35vw,111px);
+		position: relative;
+		top: -27vh;
+		width: calc(85px + 11vw);
+		height: 21vh;
+		left: max(0vw, -17px);
 	}
 
 	.overlayleft .o-bolt {
@@ -152,6 +179,12 @@
 
 	.overlayleft .o-joystick {
 		left: 4vw;
+	}
+
+	.overlayleft .o-aot {
+		left: 4vw;
+		top: 60vh;
+		z-index: 0;
 	}
 
 	.overlayleft .o-stroke3 {
@@ -179,8 +212,8 @@
 	}
 }
 
-@media screen and (max-width: 370px){
+@media screen and (max-width: 370px) {
 	.overlayleft .o-circle {
-		top: 2vh;
+		top: -25vh;
 	}
 }

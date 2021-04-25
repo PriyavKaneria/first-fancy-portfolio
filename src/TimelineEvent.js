@@ -8,11 +8,11 @@ function TimelineEvent(props) {
 				<p className='timeline-event-thumbnail'>{props.date}</p>
 				<h3>{props.title}</h3>
 				<h4>{props.subtitle}</h4>
-				<p>
+				{/* <p>
 					<strong>{props.worktitle}</strong>
 					<br />
 					{props.workdesc}
-				</p>
+				</p> */}
 			</div>
 		</li>
 	)

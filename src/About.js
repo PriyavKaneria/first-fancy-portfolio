@@ -1,22 +1,26 @@
 import "./About.css"
 import bolt from "./imgs/bolt.png"
-import boltFilled from "./imgs/bolt_filled.png"
+import boltFilled from "./imgs/bolt_filled-min.png"
 import circle from "./imgs/circle1.png"
-import circleFilled from "./imgs/circle1_filled.png"
+import circleFilled from "./imgs/circle1_filled-min.png"
 import heart from "./imgs/heart.png"
-import heartFilled from "./imgs/heart_filled.png"
+import heartFilled from "./imgs/heart_filled-min.png"
 import joystick from "./imgs/joystick.png"
-import joystickFilled from "./imgs/joystick_filled.png"
+import joystickFilled from "./imgs/joystick_filled-min.png"
 import stroke1 from "./imgs/stroke1.png"
-import stroke1Filled from "./imgs/stroke1_filled.png"
+import stroke1Filled from "./imgs/stroke1_filled-min.png"
 import stroke2 from "./imgs/stroke2.png"
-import stroke2Filled from "./imgs/stroke2_filled.png"
+import stroke2Filled from "./imgs/stroke2_filled-min.png"
 import stroke3 from "./imgs/stroke3.png"
-import stroke3Filled from "./imgs/stroke3_filled.png"
+import stroke3Filled from "./imgs/stroke3_filled-min.png"
 import stroke4 from "./imgs/stroke4.png"
-import stroke4Filled from "./imgs/stroke4_filled.png"
+import stroke4Filled from "./imgs/stroke4_filled-min.png"
 import swirl from "./imgs/swirl1.png"
-import swirlFilled from "./imgs/swirl1_filled.png"
+import swirlFilled from "./imgs/swirl1_filled-min.png"
+import aot from "./imgs/AOT-min.png"
+import aotFilled from "./imgs/AOT_filled-min.png"
+import me from "./imgs/me-min.png"
+import meFilled from "./imgs/me_filled-min.png"
 
 let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
 
@@ -49,31 +53,23 @@ function About() {
 			onMouseMove={MaskMouseMove}
 			onMouseLeave={MaskLeaveOver}>
 			<div className='aboutImage'>
-				👨🏻‍💻
+				<img className='aboutMe' src={me} alt="Priyav's best portrait" />
 				<div className='overlayleft'>
 					<img src={circle} className='o-circle' alt='Decorative imgs' />
 					<img src={bolt} className='o-bolt' alt='Decorative imgs' />
 					<img src={heart} className='o-heart' alt='Decorative imgs' />
 					<img src={joystick} className='o-joystick' alt='Decorative imgs' />
+					<img src={aot} className='o-aot' alt='Decorative imgs' />
 					<img src={stroke3} className='o-stroke3' alt='Decorative imgs' />
 				</div>
 			</div>
 			<div className='aboutContent'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-				mollitia, molestiae quas vel sint commodi repudiandae consequuntur
-				voluptatum laborum numquam blanditiis harum quisquam eius sed odit
-				fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
-				accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut
-				molestias architecto voluptate aliquam nihil, eveniet aliquid culpa
-				officia aut! Impedit sit sunt quaerat, odit, tenetur error, harum
-				nesciunt ipsum debitis quas aliquid. Reprehenderit, quia. Quo neque
-				error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis
-				modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias
-				error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt
-				dolorem! Officiis iure rerum voluptates a cumque velit quibusdam sed
-				amet tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
-				temporibus enim commodi iusto libero magni deleniti quod quam
-				consequuntur.
+				I am Priyav Kaneria, currently pursuing B.Tech in Computer Science &
+				Engineering from Motilal Nehru National Institute of Technology. I am a
+				focused and determined programmer having good experience in full stack
+				software development. I am a desciplined and curious person who loves to
+				explore new things. I love handling things in team and work with
+				responsibilities on head, with confidence of completion to achieve more.
 				<div className='overlayright'>
 					<img src={swirl} className='o-swirl' alt='Decorative imgs' />
 					<img src={stroke4} className='o-stroke4' alt='Decorative imgs' />
@@ -85,7 +81,7 @@ function About() {
 				<div className='mask' id='mask'>
 					<div className='About'>
 						<div className='aboutImage'>
-							🙆🏻‍♂️
+							<img className='aboutMe' src={meFilled} alt="Priyav's best portrait" />
 							<div className='overlayleft'>
 								<img
 									src={circleFilled}
@@ -108,30 +104,27 @@ function About() {
 									alt='Decorative imgs'
 								/>
 								<img
+									src={aotFilled}
+									className='o-aot'
+									alt='Decorative imgs'
+									style={{
+										filter: "drop-shadow(0px 0px 15px #3C6649)",
+									}}
+								/>
+								<img
 									src={stroke3Filled}
 									className='o-stroke3'
 									alt='Decorative imgs'
 								/>
 							</div>
 						</div>
-						<div className='aboutContent'>
-							Some other hidden text behind the actual text for some fun in the
-							website. This took a lot of time to make.Some other hidden text
-							behind the actual text for some fun in the website. This took a
-							lot of time to make.Some other hidden text behind the actual text
-							for some fun in the website. This took a lot of time to make.Some
-							other hidden text behind the actual text for some fun in the
-							website. This took a lot of time to make.Some other hidden text
-							behind the actual text for some fun in the website. This took a
-							lot of time to make.Some other hidden text behind the actual text
-							for some fun in the website. This took a lot of time to make.Some
-							other hidden text behind the actual text for some fun in the
-							website. This took a lot of time to make.Some other hidden text
-							behind the actual text for some fun in the website. This took a
-							lot of time to make.Some other hidden text behind the actual text
-							for some fun in the website. This took a lot of time to make.Some
-							other hidden text behind the actual text for some fun in the
-							website. This took a lot of time to make.
+						<div className='aboutContent' style={{ color: "#0400ff" }}>
+							So you finally found out the hidden text. Want to know more about
+							me?? I love playing chess and developing games in Unity for you
+							all to enjoy. I think I can dance and sing well. I even have
+							interest in robotics and electronics. I even spend some time in
+							refreshing by playing games and watching youtube (from where I
+							have acquired most of my knowledge). Feel free to ping me on social medias or through mail anytime.
 							<div className='overlayright'>
 								<img
 									src={swirlFilled}

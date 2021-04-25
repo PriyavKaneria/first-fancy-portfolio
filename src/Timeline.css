@@ -136,7 +136,7 @@
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-image: url("./TreeFrames/69.png");
+	background-image: url("./TreeFrames-min/69-min.png");
 	background-repeat: no-repeat;
 	background-position-x: 200px;
 }
@@ -150,7 +150,7 @@
 .ImageSequence {
 	position: absolute;
 	width: 60vw;
-	top: -25vh;
+	top: -50vh;
 	right: 0vw;
 	height: 100vh;
 	z-index: 1;

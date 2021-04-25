@@ -48,30 +48,30 @@ function Timeline() {
 			</div>
 			<ul className='timeline'>
 				<TimelineEvent
-					date='April 2020'
-					title='Title1'
-					subtitle='Subtitle1'
-					worktitle='My work1'
+					date='May 2020 - Present'
+					title='Full Stack Software Developer'
+					subtitle='Aztlan Pvt. Ltd.'
+					worktitle='Frontend and Backend'
 					workdesc='I did this and that in the job'
 				/>
 				<TimelineEvent
-					date='April 2020'
-					title='Title2'
-					subtitle='Subtitle2'
+					date='Coming Soon...'
+					title='Work Title'
+					subtitle='Company Name'
 					worktitle='My work2'
 					workdesc='I did this and that in the job'
 				/>
 				<TimelineEvent
-					date='April 2020'
-					title='Title3'
-					subtitle='Subtitle3'
+					date='Coming Soon...'
+					title='Work Title'
+					subtitle='Some Company Name'
 					worktitle='My work3'
 					workdesc='I did this and that in the job'
 				/>
 				<TimelineEvent
-					date='April 2020'
-					title='Title4'
-					subtitle='Subtitle4'
+					date='Coming Soon...'
+					title='Work Title'
+					subtitle='Another Company Name'
 					worktitle='My work4'
 					workdesc='I did this and that in the job'
 				/>
