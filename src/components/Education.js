@@ -1,10 +1,10 @@
 import Aos from "aos"
 import "aos/dist/aos.css"
-import "./Education.css"
-import College from "./imgs/College-min.png"
-import CollegeIcon from "./imgs/CollegeIcon.svg"
-import School2 from "./imgs/School+2-min.png"
-import School from "./imgs/School-min.png"
+import "../styles/Education.css"
+import College from "../imgs/College-min.png"
+import CollegeIcon from "../imgs/CollegeIcon.svg"
+import School2 from "../imgs/School+2-min.png"
+import School from "../imgs/School-min.png"
 
 let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
 

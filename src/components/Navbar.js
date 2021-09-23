@@ -1,19 +1,22 @@
-import "./Navbar.css"
-import HomeMe from "./imgs/HomeMe.png"
+import "../styles/Navbar.css"
+import HomeMe from "../imgs/HomeMe.png"
+import HoverMe from "../imgs/Hover.svg"
+import Click from "../imgs/Click.svg"
 
 function Navbar() {
 	window.onload = function () {
-		document.getElementById("toggler").onmouseover = function () {
-			document.getElementById("toggle").checked = !document.getElementById(
-				"toggle"
-			).checked
+		document.getElementById("toggler").onmouseout = function () {
+			document.getElementById("toggle").checked =
+				!document.getElementById("toggle").checked
 		}
 	}
 	return (
 		<div className='menu'>
-			<input type='checkbox' id='toggle' />
+			<input type='checkbox' id='toggle' checked={true} />
 			<label id='show-menu' htmlFor='toggle'>
 				<div className='btn HomePic-container'>
+					<img src={HoverMe} className="HoverText" alt="Hover helper"/>
+					<img src={Click} className="ClickText" alt="Click helper"/>
 					<img
 						src={HomeMe}
 						className='HomePic'

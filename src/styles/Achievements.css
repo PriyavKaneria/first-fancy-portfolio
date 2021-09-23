@@ -1,0 +1,206 @@
+.achievements {
+	position: relative;
+	top: 0;
+	width: 101%;
+	height: fit-content;
+	min-height: 100vh;
+	background: linear-gradient(to bottom, #f1f1f1, #868686);
+	display: table;
+}
+
+.table-top {
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	background-image: url("../imgs/table-min.jpg");
+	background-size: contain;
+	margin-right: auto;
+	margin-left: 10%;
+	margin-top: 7%;
+	border-radius: 12px;
+}
+
+.ach-content {
+	position: absolute;
+	top: 75%;
+	left: 35%;
+	width: 30%;
+	height: fit-content;
+	min-height: 10%;
+	background-color: #dfdfdf;
+	border-radius: 5px;
+	border: 10px solid #adb2bd;
+	box-shadow: inset -1px 2px 2px #404040, 6px 9px 1px rgba(0, 0, 0, 0.1);
+}
+
+.ach-title {
+	margin: 10px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: Montserrat;
+	font-feature-settings: "smcp";
+	font-variant: small-caps;
+}
+.ach-info {
+	margin: 20px;
+	text-align: center;
+	font-family: Montserrat;
+	font-feature-settings: "smcp";
+	font-variant: small-caps;
+}
+
+.achievement {
+	position: relative;
+	width: fit-content;
+	height: fit-content;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.glow {
+	transition: all 0.25s ease-in-out;
+}
+
+.glow:hover {
+	filter: drop-shadow(3px -2px 1px #101010);
+}
+
+.medal-gold {
+	background-image: url("../imgs/medal-gold-min.png");
+	width: 80px;
+	position: relative;
+	height: 159px;
+	background-size: cover;
+}
+
+.medal-silver {
+	background-image: url("../imgs/medal-silver-min.png");
+	width: 80px;
+	position: relative;
+	height: 159px;
+	background-size: cover;
+}
+
+.medal-bronze {
+	background-image: url("../imgs/medal-bronze-min.png");
+	width: 80px;
+	position: relative;
+	height: 159px;
+	background-size: cover;
+}
+
+.trophy {
+	background-image: url("../imgs/trophy-min.png");
+	width: 155px;
+	position: relative;
+	height: 159px;
+	background-size: cover;
+	z-index: 1;
+}
+
+.trophy-stand {
+	position: absolute;
+	width: 155px;
+	height: 20px;
+	background-color: #612e00;
+	border-radius: 0px 0px 15px 15px;
+	bottom: -10px;
+	z-index: 0;
+	box-shadow: 3px -2px 1px #101010;
+}
+
+.certificate {
+	background-image: url("../imgs/certificate-min.png");
+	width: 228px;
+	position: absolute;
+	right: -10px;
+	bottom: -20px;
+	height: 159px;
+	background-size: cover;
+}
+
+.certificate:before {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 50%;
+	border-radius: 50%;
+	background-color: #170082;
+	content: " ";
+}
+
+.achievementcertificate {
+	position: relative;
+	width: 20px;
+	top: 5%;
+	left: 30%;
+	height: fit-content;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.rotate1 {
+	transform: rotate(5deg);
+}
+.rotate2 {
+	transform: rotate(-5deg);
+}
+.rotate3 {
+	transform: rotate(2deg);
+}
+.rotate1:hover {
+	transform: rotate(0deg);
+}
+.rotate2:hover {
+	transform: rotate(0deg);
+}
+.rotate3:hover {
+	transform: rotate(0deg);
+}
+
+.achieve-title {
+	top: -45px !important;
+}
+
+@media screen and (max-width: 768px) {
+	.ach-content {
+		width: 60%;
+		left: 17%;
+	}
+	.ach-title {
+		font-size: smaller;
+	}
+	.ach-info {
+		font-size: smaller;
+	}
+	.medal-gold {
+		width: 40px;
+		height: 80px;
+	}
+	.medal-silver {
+		width: 40px;
+		height: 80px;
+	}
+	.medal-bronze {
+		width: 40px;
+		height: 80px;
+	}
+	.trophy {
+		width: 70px;
+		height: 70px;
+	}
+	.trophy-stand {
+		width: 70px;
+		height: 10px;
+	}
+	.achievementcertificate {
+		top: 40%;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.achievementcertificate {
+		left: 50%;
+	}
+}

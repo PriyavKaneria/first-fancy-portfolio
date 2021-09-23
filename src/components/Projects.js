@@ -4,24 +4,24 @@ import "swiper/swiper.scss"
 import "swiper/components/navigation/navigation.scss"
 import "swiper/components/effect-coverflow/effect-coverflow.scss"
 import "swiper/components/pagination/pagination.scss"
-import "./Projects.css"
-import bulboff from "./imgs/bulb-off-min.png"
-import bulbon from "./imgs/bulb-on-min.png"
+import "../styles/Projects.css"
+import bulboff from "../imgs/bulb-off-min.png"
+import bulbon from "../imgs/bulb-on-min.png"
 import React, { useRef, useEffect } from "react"
 import gsap, { TweenMax } from "gsap"
 import { MotionPathPlugin } from "gsap/MotionPathPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import PlaneTop from "./imgs/PlaneTop.svg"
+import PlaneTop from "../imgs/PlaneTop.svg"
 
-import SS1 from "./imgs/Projects/SS1-min.png"
-import SS2 from "./imgs/Projects/SS2-min.png"
-import SS3 from "./imgs/Projects/SS3-min.png"
-import SS4 from "./imgs/Projects/SS4-min.png"
-import SS5 from "./imgs/Projects/SS5-min.png"
-import SS6 from "./imgs/Projects/SS6-min.png"
-import SS7 from "./imgs/Projects/SS7-min.png"
-import SS8 from "./imgs/Projects/SS8-min.png"
-import SS9 from "./imgs/Projects/SS9-min.png"
+import SS1 from "../imgs/Projects/SS1-min.png"
+import SS2 from "../imgs/Projects/SS2-min.png"
+import SS3 from "../imgs/Projects/SS3-min.png"
+import SS4 from "../imgs/Projects/SS4-min.png"
+import SS5 from "../imgs/Projects/SS5-min.png"
+import SS6 from "../imgs/Projects/SS6-min.png"
+import SS7 from "../imgs/Projects/SS7-min.png"
+import SS8 from "../imgs/Projects/SS8-min.png"
+import SS9 from "../imgs/Projects/SS9-min.png"
 
 SwiperCore.use([Navigation, EffectCoverflow, Pagination])
 
@@ -135,14 +135,18 @@ function Projects() {
 						</div>
 						<a
 							href='#none'
-							onClick={() => {window.open('https://github.com/PriyavKaneria/protectHER');
-							 window.open('https://github.com/PriyavKaneria/sos-safeosecure');}}>
+							onClick={() => {
+								window.open("https://github.com/PriyavKaneria/protectHER")
+								window.open("https://github.com/PriyavKaneria/sos-safeosecure")
+							}}>
 							<div className='project-github' />
 						</a>
 						<a
 							href='#none'
-							onClick={() => {window.open('https://protectHER.netlify.app');
-							 window.open('https://SOS-safeOsecure.netlify.app');}}>
+							onClick={() => {
+								window.open("https://protectHER.netlify.app")
+								window.open("https://SOS-safeOsecure.netlify.app")
+							}}>
 							<div className='project-link' />
 						</a>
 					</div>

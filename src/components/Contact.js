@@ -1,10 +1,10 @@
-import "./Contact.css"
+import "../styles/Contact.css"
 import TypeIt from "typeit-react"
 import React, { useRef, useEffect } from "react"
 import gsap, { TweenMax } from "gsap"
 import { MotionPathPlugin } from "gsap/MotionPathPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import PlaneTop from "./imgs/PlaneTop.svg"
+import PlaneTop from "../imgs/PlaneTop.svg"
 
 function LanguagesAndContact() {
 	gsap.registerPlugin(MotionPathPlugin)
@@ -12,12 +12,11 @@ function LanguagesAndContact() {
 	let plane = useRef(null)
 	let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
 	let startVal = "top center"
-	let planeCss;
-	if (noGsapMobile){
-		planeCss = {top:'40px', right:'200px', height:'600px', width:'600px'}
-	}
-	else{
-		planeCss = {top:'30vh', right:'0', height:'300px', width:'300px'}
+	let planeCss
+	if (noGsapMobile) {
+		planeCss = { top: "40px", right: "200px", height: "600px", width: "600px" }
+	} else {
+		planeCss = { top: "30vh", right: "0", height: "300px", width: "300px" }
 		startVal = "top 80%"
 	}
 	useEffect(() => {
@@ -35,14 +34,20 @@ function LanguagesAndContact() {
 		// add animations and labels to the timeline
 		tl.add(
 			TweenMax.to(plane, 1000, {
-				css:planeCss
+				css: planeCss,
 			})
 		)
 	})
 
 	return (
 		<div className='LnC'>
-			<div style={{ height: "67vh", width: "100vw", position: "absolute", overflow: "hidden"}}>
+			<div
+				style={{
+					height: "67vh",
+					width: "100vw",
+					position: "absolute",
+					overflow: "hidden",
+				}}>
 				<img
 					src={PlaneTop}
 					ref={(el) => {
@@ -76,7 +81,9 @@ function LanguagesAndContact() {
 									.delete()
 									.type("मुझे हिंदी भी आती है", { speed: 70 })
 									.break()
-									.type("<span className='subtype'>I can speak hindi too</span>")
+									.type(
+										"<span className='subtype'>I can speak hindi too</span>"
+									)
 									.pause(1600)
 								return instance
 							}}
@@ -85,7 +92,7 @@ function LanguagesAndContact() {
 					<i>English / Gujarati / Hindi</i>
 				</div>
 			</div>
-			<div className='contact' id='contact' style={{ "listStyle": "none" }}>
+			<div className='contact' id='contact' style={{ listStyle: "none" }}>
 				<li className='icon icon--linkedin'>
 					<a
 						href='https://www.linkedin.com/in/priyavkaneria'

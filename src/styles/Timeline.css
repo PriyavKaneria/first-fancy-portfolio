@@ -36,6 +36,11 @@
 	z-index: 2;
 }
 
+.timeline a{
+	text-decoration: none;
+	color: #000;
+}
+
 .timeline:before {
 	background-color: black;
 	content: "";
@@ -136,7 +141,7 @@
 	display: block;
 	height: 100%;
 	width: 100%;
-	background-image: url("./TreeFrames-min/69-min.png");
+	background-image: url("../TreeFrames-min/69-min.png");
 	background-repeat: no-repeat;
 	background-position-x: 200px;
 }
