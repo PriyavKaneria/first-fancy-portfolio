@@ -31,8 +31,8 @@
 
 .typer {
 	position: relative;
-    width: auto;
-    height: 100px;
+	width: auto;
+	height: 100px;
 }
 
 .small-title {
@@ -106,25 +106,25 @@
 }
 
 .icon--linkedin a {
-	background-image: url("./imgs/LinkedIn.svg");
+	background-image: url("../imgs/LinkedIn.svg");
 	background-color: transparent;
 	background-size: contain;
 }
 
 .icon--github a {
-	background-image: url("./imgs/GitHub.svg");
+	background-image: url("../imgs/GitHub.svg");
 	background-color: transparent;
 	background-size: contain;
 }
 
 .icon--gitlab a {
-	background-image: url("./imgs/Gitlab.svg");
+	background-image: url("../imgs/Gitlab.svg");
 	background-color: transparent;
 	background-size: contain;
 }
 
 .icon--gmail a {
-	background-image: url("./imgs/Gmail.svg");
+	background-image: url("../imgs/Gmail.svg");
 	background-color: transparent;
 	background-size: contain;
 }
@@ -139,14 +139,14 @@
 	right: -100px;
 }
 
-@media screen and (max-width:768px) {
-	.languages{
+@media screen and (max-width: 768px) {
+	.languages {
 		font-size: 1.5rem;
 	}
-	.subtype{
+	.subtype {
 		font-size: 1rem;
 	}
-	.LnC{
+	.LnC {
 		min-height: 67vh;
 	}
 }

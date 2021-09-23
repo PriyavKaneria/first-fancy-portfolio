@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react"
 import gsap, { TweenMax } from "gsap"
 import { MotionPathPlugin } from "gsap/MotionPathPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import PlaneTop from "./imgs/PlaneTop.svg"
+import PlaneTop from "../imgs/PlaneTop.svg"
 
 function ContactPlane() {
 	gsap.registerPlugin(MotionPathPlugin)

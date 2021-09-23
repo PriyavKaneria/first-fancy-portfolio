@@ -1,26 +1,26 @@
-import "./About.css"
-import bolt from "./imgs/bolt.png"
-import boltFilled from "./imgs/bolt_filled-min.png"
-import circle from "./imgs/circle1.png"
-import circleFilled from "./imgs/circle1_filled-min.png"
-import heart from "./imgs/heart.png"
-import heartFilled from "./imgs/heart_filled-min.png"
-import joystick from "./imgs/joystick.png"
-import joystickFilled from "./imgs/joystick_filled-min.png"
-import stroke1 from "./imgs/stroke1.png"
-import stroke1Filled from "./imgs/stroke1_filled-min.png"
-import stroke2 from "./imgs/stroke2.png"
-import stroke2Filled from "./imgs/stroke2_filled-min.png"
-import stroke3 from "./imgs/stroke3.png"
-import stroke3Filled from "./imgs/stroke3_filled-min.png"
-import stroke4 from "./imgs/stroke4.png"
-import stroke4Filled from "./imgs/stroke4_filled-min.png"
-import swirl from "./imgs/swirl1.png"
-import swirlFilled from "./imgs/swirl1_filled-min.png"
-import aot from "./imgs/AOT-min.png"
-import aotFilled from "./imgs/AOT_filled-min.png"
-import me from "./imgs/me-min.png"
-import meFilled from "./imgs/me_filled-min.png"
+import "../styles/About.css"
+import bolt from "../imgs/bolt.png"
+import boltFilled from "../imgs/bolt_filled-min.png"
+import circle from "../imgs/circle1.png"
+import circleFilled from "../imgs/circle1_filled-min.png"
+import heart from "../imgs/heart.png"
+import heartFilled from "../imgs/heart_filled-min.png"
+import joystick from "../imgs/joystick.png"
+import joystickFilled from "../imgs/joystick_filled-min.png"
+import stroke1 from "../imgs/stroke1.png"
+import stroke1Filled from "../imgs/stroke1_filled-min.png"
+import stroke2 from "../imgs/stroke2.png"
+import stroke2Filled from "../imgs/stroke2_filled-min.png"
+import stroke3 from "../imgs/stroke3.png"
+import stroke3Filled from "../imgs/stroke3_filled-min.png"
+import stroke4 from "../imgs/stroke4.png"
+import stroke4Filled from "../imgs/stroke4_filled-min.png"
+import swirl from "../imgs/swirl1.png"
+import swirlFilled from "../imgs/swirl1_filled-min.png"
+import aot from "../imgs/AOT-min.png"
+import aotFilled from "../imgs/AOT_filled-min.png"
+import me from "../imgs/me-min.png"
+import meFilled from "../imgs/me_filled-min.png"
 
 let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
 
@@ -81,7 +81,11 @@ function About() {
 				<div className='mask' id='mask'>
 					<div className='About'>
 						<div className='aboutImage'>
-							<img className='aboutMe' src={meFilled} alt="Priyav's best portrait" />
+							<img
+								className='aboutMe'
+								src={meFilled}
+								alt="Priyav's best portrait"
+							/>
 							<div className='overlayleft'>
 								<img
 									src={circleFilled}
@@ -124,7 +128,8 @@ function About() {
 							all to enjoy. I think I can dance and sing well. I even have
 							interest in robotics and electronics. I even spend some time in
 							refreshing by playing games and watching youtube (from where I
-							have acquired most of my knowledge). Feel free to ping me on social medias or through mail anytime.
+							have acquired most of my knowledge). Feel free to ping me on
+							social medias or through mail anytime.
 							<div className='overlayright'>
 								<img
 									src={swirlFilled}

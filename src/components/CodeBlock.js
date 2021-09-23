@@ -1,5 +1,5 @@
-import "./CodeBlock.css"
-import TypeIt from "typeit-react";
+import "../styles/CodeBlock.css"
+import TypeIt from "typeit-react"
 
 function CodeBlock(props) {
 	return (
@@ -20,20 +20,20 @@ function CodeBlock(props) {
 						}}
 					/> */}
 					<TypeIt
-						getBeforeInit={instance => {
+						getBeforeInit={(instance) => {
 							instance
-							.pause(props.times[0])
-							.type(props.strings[0],{speed:200})
-							.pause(props.times[1])
-							.break()
-							.type(props.strings[1],{speed:200})
+								.pause(props.times[0])
+								.type(props.strings[0], { speed: 100 })
+								.pause(props.times[1])
+								.break()
+								.type(props.strings[1], { speed: 100 })
 
 							// Remember to return it!
-							return instance;
+							return instance
 						}}
 						options={{
 							// cursor:false,
-							lifeLike:true
+							lifeLike: true,
 						}}
 					/>
 				</code>

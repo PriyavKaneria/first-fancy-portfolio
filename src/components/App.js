@@ -1,15 +1,15 @@
-import "./App.css"
+import "../styles/App.css"
 import CodeBlock from "./CodeBlock"
 
 function App() {
-	var b1strings = ["Hello!", "How are you?"]
-	var b1times = [0, 6000]
-	var b2strings = ["This is Priyav Kaneria", "Hope you are too!👼🏻"]
-	var b2times = [1500, 9500]
-	var b3strings = ["You can scroll down now", "Many easter eggs down below😆"]
-	var b3times = [15000, 11000]
-	var b4strings = ["I am fine", "Come on!...👇🏻"]
-	var b4times = [9500, 10000]
+	var b1strings = ["Hello!", "I am Priyav Kaneria"]
+	var b1times = [0, 1500]
+	var b2strings = ["How are you?", "I am fine"]
+	var b2times = [6000, 2000]
+	var b3strings = ["Hope you are too!👼🏻", "You can scroll down now"]
+	var b3times = [9500, 1000]
+	var b4strings = ["Come on!...👇🏻", "Many easter eggs down below😆"]
+	var b4times = [14000, 3000]
 	return (
 		<div className='App'>
 			<CodeBlock blockId='block1' strings={b1strings} times={b1times} />

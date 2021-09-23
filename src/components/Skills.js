@@ -1,11 +1,11 @@
-import "./Skills.css"
+import "../styles/Skills.css"
 import React from "react"
 import Aos from "aos"
-import Frontend from "./imgs/TechIcons/Frontend.svg"
-import Backend from "./imgs/TechIcons/Backend.svg"
-import Languages from "./imgs/TechIcons/Languages.svg"
-import Dbaot from "./imgs/TechIcons/Database and other tools.svg"
-import Softskills from "./imgs/TechIcons/Soft Skills.svg"
+import Frontend from "../imgs/TechIcons/Frontend.svg"
+import Backend from "../imgs/TechIcons/Backend.svg"
+import Languages from "../imgs/TechIcons/Languages.svg"
+import Dbaot from "../imgs/TechIcons/Database and other tools.svg"
+import Softskills from "../imgs/TechIcons/Soft Skills.svg"
 
 function Skills() {
 	Aos.init()

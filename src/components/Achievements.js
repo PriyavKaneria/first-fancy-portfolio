@@ -1,4 +1,4 @@
-import "./Achievements.css"
+import "../styles/Achievements.css"
 import React from "react"
 
 let noGsapMobile = window.matchMedia("(min-width: 768px)").matches
@@ -10,7 +10,7 @@ class Achievements extends React.Component {
 			title: "Hover over an achievement to see details",
 			info: "Information regarding the achievement",
 		}
-		if(!noGsapMobile){
+		if (!noGsapMobile) {
 			this.state = {
 				title: "Click over an achievement to see details",
 				info: "Information regarding the achievement",
@@ -33,14 +33,16 @@ class Achievements extends React.Component {
 			},
 			{
 				key: 2,
-				title: "School Rank 2 - National Science Talent Search Examination 2018-19",
+				title:
+					"School Rank 2 - National Science Talent Search Examination 2018-19",
 				info: "Achieved school rank 2 in National Science Talent Search Examination",
 				category: "medal",
 				type: "silver",
 			},
 			{
 				key: 3,
-				title: "School Rank 1 - National Science Talent Search Examination 2019-20",
+				title:
+					"School Rank 1 - National Science Talent Search Examination 2019-20",
 				info: "Achieved school rank 1 in National Science Talent Search Examination",
 				category: "medal",
 				type: "gold",
@@ -57,7 +59,8 @@ class Achievements extends React.Component {
 			},
 			{
 				key: 8,
-				title: "Best Powerpoint Presentation - Interschool Powerpoint Presentation - 2016",
+				title:
+					"Best Powerpoint Presentation - Interschool Powerpoint Presentation - 2016",
 				info: "Best Powerpoint Presentation of State Level Interschool Powerpoint Presentation at Confluence 2016",
 				category: "trophy",
 				type: "",

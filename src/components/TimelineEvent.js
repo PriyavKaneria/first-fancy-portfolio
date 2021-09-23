@@ -1,4 +1,4 @@
-import "./Timeline.css"
+import "../styles/Timeline.css"
 
 function TimelineEvent(props) {
 	return (
@@ -18,4 +18,4 @@ function TimelineEvent(props) {
 	)
 }
 
-export default TimelineEvent;
+export default TimelineEvent

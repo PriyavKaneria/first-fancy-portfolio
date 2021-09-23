@@ -1,12 +1,12 @@
 import { Controller, Scene } from "react-scrollmagic"
 import Sequence from "./ImageSequence"
-import "./Timeline.css"
+import "../styles/Timeline.css"
 import TimelineEvent from "./TimelineEvent"
 import React, { useRef, useEffect } from "react"
 import gsap, { TweenMax } from "gsap"
 import { MotionPathPlugin } from "gsap/MotionPathPlugin"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import PlaneTop from "./imgs/PlaneTop.svg"
+import PlaneTop from "../imgs/PlaneTop.svg"
 
 function Timeline() {
 	const ref = useRef()
@@ -54,13 +54,15 @@ function Timeline() {
 					worktitle='Frontend and Backend'
 					workdesc='I did this and that in the job'
 				/>
-				<TimelineEvent
-					date='Coming Soon...'
-					title='Work Title'
-					subtitle='Company Name'
-					worktitle='My work2'
-					workdesc='I did this and that in the job'
-				/>
+				<a href='https://skillpad.io/' target='_blank' rel="noreferrer">
+					<TimelineEvent
+						date='May 2021 - August 2021'
+						title='Frontend Web Developer'
+						subtitle='SYMB Techonologies'
+						worktitle='Caomplete frontend, Skillpad'
+						workdesc='I did this and that in the job'
+					/>
+				</a>
 				<TimelineEvent
 					date='Coming Soon...'
 					title='Work Title'
@@ -84,8 +86,14 @@ function Timeline() {
 				<Controller>
 					<Scene duration='100%' triggerHook='onLeave' pin>
 						{(progress) => (
-							<div	
-								style={{ position: "relative", height: "100%", width: "100%", left: "0", inset: "0px auto auto 0px"}}>
+							<div
+								style={{
+									position: "relative",
+									height: "100%",
+									width: "100%",
+									left: "0",
+									inset: "0px auto auto 0px",
+								}}>
 								<Sequence ref={ref} progress={progress} />
 							</div>
 						)}
