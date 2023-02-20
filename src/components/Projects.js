@@ -22,6 +22,10 @@ import SS6 from "../imgs/Projects/SS6-min.png"
 import SS7 from "../imgs/Projects/SS7-min.png"
 import SS8 from "../imgs/Projects/SS8-min.png"
 import SS9 from "../imgs/Projects/SS9-min.png"
+import SS10 from "../imgs/Projects/SS10-min.jpg"
+import SS11 from "../imgs/Projects/SS11-min.jpg"
+import SS12 from "../imgs/Projects/SS12-min.jpg"
+import SS13 from "../imgs/Projects/SS13-min.jpg"
 
 SwiperCore.use([Navigation, EffectCoverflow, Pagination])
 
@@ -92,6 +96,120 @@ function Projects() {
 					slideShadows: true,
 				}}
 				navigation>
+				<SwiperSlide
+					style={{
+						backgroundImage: `url(${SS13})`,
+					}}>
+					<div className='project-detail text-white'>
+						<div className='project-title'>Rannect</div>
+						<div className='project-context'>
+							A location-based online web chat app that helps people socialize
+							and make connections with people all around the world
+							<br />
+							<u>
+								Using Phoenix, Elixir, TailwindCSS <br />
+								AlpineJs, Liveview - 2021
+							</u>
+						</div>
+						{/* <a
+							href='https://github.com/PriyavKaneria/Dev-Assist'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-github' />
+						</a> */}
+						<a
+							href='https://youtu.be/Z5s_yBsyTk0'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-link' />
+						</a>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide
+					style={{
+						backgroundImage: `url(${SS12})`,
+					}}>
+					<div className='project-detail text-white'>
+						<div className='project-title'>Collabrush</div>
+						<div className='project-context'>
+							We have Figma for UI collaboration MS Paint for painting images
+							But nothing to paint with collaboration - Winner Webster 2022
+							<br />
+							<u>
+								Using Next.Js 13, Supabase, Socket.IO <br />
+								Typescipt + Tailwind + Express - 2022
+							</u>
+						</div>
+						<a
+							href='https://github.com/collabrush/collabrush'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-github' />
+						</a>
+						<a
+							href='https://www.youtube.com/watch?v=rlPfgZ50KW0'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-link' />
+						</a>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide
+					style={{
+						backgroundImage: `url(${SS11})`,
+					}}>
+					<div className='project-detail text-white'>
+						<div className='project-title'>cWuzzle</div>
+						<div className='project-context'>
+							An online crossword making, playing and sharing game - Built for Webster 2021
+							<br />
+							<u>
+								Using  Next.js, TailwindCSS, <br />
+								FastAPI, Supabase - 2021
+							</u>
+						</div>
+						<a
+							href='https://github.com/PriyavKaneria/Webster2021'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-github' />
+						</a>
+						<a
+							href='https://cwuzzle.netlify.app/'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-link' />
+						</a>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide
+					style={{
+						backgroundImage: `url(${SS10})`,
+					}}>
+					<div className='project-detail text-white'>
+						<div className='project-title'>Dr.Vincent - The Game</div>
+						<div className='project-context'>
+							Devjam winning game that tackles stress and awareness issue faced during Covid Pandemic times
+							<br />
+							<u>
+								Using Unity, C# <br />
+								2020
+							</u>
+						</div>
+						<a
+							href='https://drive.google.com/drive/folders/1SRw1kraEhPCud5T63-J8QgBtsi8pszPW?usp=sharing'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-github' />
+						</a>
+						<a
+							href='https://drive.google.com/file/d/12uBCCWDr433hPaJpQMgXcXluXdkWaLKJ/view?usp=share_link'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-link' />
+						</a>
+					</div>
+				</SwiperSlide>
 				<SwiperSlide
 					style={{
 						backgroundImage: `url(${SS1})`,

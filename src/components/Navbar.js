@@ -12,7 +12,7 @@ function Navbar() {
 	}
 	return (
 		<div className='menu'>
-			<input type='checkbox' id='toggle' checked={true} />
+			<input type='checkbox' id='toggle' defaultChecked/>
 			<label id='show-menu' htmlFor='toggle'>
 				<div className='btn HomePic-container'>
 					<img src={HoverMe} className="HoverText" alt="Hover helper"/>

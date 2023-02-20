@@ -25,6 +25,13 @@
 	display: none;
 }
 
+pre {
+	display: unset;
+	font-family: unset;
+	white-space: pre-wrap;
+	margin: unset;
+}
+
 /* Styling */
 .timeline {
 	margin: 4em auto 4em auto;
@@ -36,7 +43,7 @@
 	z-index: 2;
 }
 
-.timeline a{
+.timeline a {
 	text-decoration: none;
 	color: #000;
 }
@@ -80,7 +87,10 @@
 }
 .timeline-event-copy h4 {
 	font-size: 1.2em;
-	margin-bottom: 1.2em;
+	margin-bottom: 0.2em;
+}
+.timeline-event-copy p {
+	margin-top: 0.2em;
 }
 .timeline-event-copy strong {
 	font-weight: 700;
