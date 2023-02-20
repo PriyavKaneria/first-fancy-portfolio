@@ -16,20 +16,21 @@ function Skills() {
 				<div className='lang'>
 					<div className='skill-heading'>Languages</div>
 					<object type='image/svg+xml' data={Languages} className='skill-image'>
-						languages I know - HTML, CSS, JavaScript, C++ and python
+						languages I know - HTML, CSS, JavaScript, C++, python, elixir,
+						svelte and go
 					</object>
 				</div>
 			</div>
 			<div className='skill-col'>
 				<div className='front'>
 					<div className='skill-heading'>Frontend</div>
-					<object type='image/svg+xml' data={Frontend} class='skill-image'>
-						Frontend stack - Svelte, React and Elm
+					<object type='image/svg+xml' data={Frontend} className='skill-image'>
+						Frontend stack - Phoenix, Next.js, react, remix
 					</object>
 				</div>
 				<div className='back'>
 					<div className='skill-heading'>Backend</div>
-					<object type='image/svg+xml' data={Backend} class='skill-image'>
+					<object type='image/svg+xml' data={Backend} className='skill-image'>
 						Backend stack - Nodejs, FastAPI, Django and Flask
 					</object>
 				</div>
@@ -37,7 +38,7 @@ function Skills() {
 					<div className='skill-heading'>Database and other tools</div>
 					<object type='image/svg+xml' data={Dbaot} className='skill-image'>
 						Database and other tools stack - RabbitMQ, Pusher, postgres, redis,
-						MySQL, ArangoDB
+						MySQL, ArangoDB, Supabase, Docker
 					</object>
 				</div>
 			</div>

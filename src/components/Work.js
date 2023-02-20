@@ -47,35 +47,44 @@ function Timeline() {
 					alt=''></img>
 			</div>
 			<ul className='timeline'>
-				<TimelineEvent
-					date='May 2020 - Present'
-					title='Full Stack Software Developer'
-					subtitle='Aztlan Pvt. Ltd.'
-					worktitle='Frontend and Backend'
-					workdesc='I did this and that in the job'
-				/>
-				<a href='https://skillpad.io/' target='_blank' rel="noreferrer">
+				<a
+					href='https://www.linkedin.com/company/symb-technologies/'
+					target='_blank'
+					rel='noreferrer'>
 					<TimelineEvent
 						date='May 2021 - August 2021'
-						title='Frontend Web Developer'
+						title='Web Developer'
 						subtitle='SYMB Techonologies'
-						worktitle='Caomplete frontend, Skillpad'
-						workdesc='I did this and that in the job'
+						worktitle=''
+						workdesc={`• Developed a skill testing platform, Skillpad website using NextJs & NodeJs
+• Programmed & optimized web scrapper to collect detailed & formatted Properties' data of particular location`}
 					/>
 				</a>
 				<TimelineEvent
-					date='Coming Soon...'
-					title='Work Title'
-					subtitle='Some Company Name'
-					worktitle='My work3'
-					workdesc='I did this and that in the job'
+					date='May 2020 - June 2022'
+					title='Software Development Intern'
+					subtitle='Aztlan Pvt. Ltd.'
+					worktitle=''
+					workdesc={`• Developed 4 products handling Backend (FastAPI, PostgreSQL), Frontend (NextJs, Svelte, Tailwind CSS) & Database (ArangoDB, PostgreSQL).
+• Delivered 3 products as Product lead servicing clients managing DevOps & Frontend-Backend Hosting.
+• Designed database schema, built APIs & integrated with frontend.
+• Hired potential candidates for frontend team of this startup.`}
 				/>
 				<TimelineEvent
-					date='Coming Soon...'
-					title='Work Title'
-					subtitle='Another Company Name'
+					date='Aug 2022 - Present'
+					title='Web System Administrator'
+					subtitle='Motilal Nehru National Institute Of Technology'
+					worktitle=''
+					workdesc='Managing the Registrations, Admissions, Examinations, Results, and data with a team under the Dean Academics'
+				/>
+				<TimelineEvent
+					date='Jan 2022 - Present'
+					title='Full Stack Developer'
+					subtitle='PureML'
 					worktitle='My work4'
-					workdesc='I did this and that in the job'
+					workdesc={`• Designed and optimized schema for the application
+• Built complete backend application compatible for CLI and web in FastAPI, Nodejs as well as GoLang
+• Managing production deployment`}
 				/>
 			</ul>
 			<div className='heading'>

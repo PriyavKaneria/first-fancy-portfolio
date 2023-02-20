@@ -19,20 +19,48 @@ class Achievements extends React.Component {
 		this.data = [
 			{
 				key: 0,
+				title: "1st Position - Webster 2022",
+				info: "Secured 1st position in Web Application Competition during Avishkar 2022 (Tech-fest MNNIT)",
+				category: "medal",
+				type: "gold",
+			},
+			{
+				key: 1,
+				title: "1st Position - Logical Rhythm",
+				info: "Secured 1st position in ML Model Competition on Kaggle during Avishkar 2022 (Tech-fest MNNIT)",
+				category: "medal",
+				type: "gold",
+			},
+			{
+				key: 2,
+				title: "1st Position - Tuxwars",
+				info: "Secured 1st position in Linux commands & scripting Competition during Avishkar 2022 (Tech-fest MNNIT)",
+				category: "medal",
+				type: "gold",
+			},
+			{
+				key: 3,
+				title: "1st Position - Revengg",
+				info: "Secured 1st position in Cyber security CTF Competition during Avishkar 2022 (Tech-fest MNNIT)",
+				category: "medal",
+				type: "gold",
+			},
+			{
+				key: 4,
 				title: "Gold Medal - National Cyber Olympiad",
 				info: "Achieved state and school rank 1 in National Cyber Olympiad 2017-18",
 				category: "medal",
 				type: "gold",
 			},
 			{
-				key: 1,
+				key: 5,
 				title: "Silver Medal - National Cyber Olympiad",
 				info: "Achieved school rank 2 in National Cyber Olympiad 2015-16",
 				category: "medal",
 				type: "silver",
 			},
 			{
-				key: 2,
+				key: 6,
 				title:
 					"School Rank 2 - National Science Talent Search Examination 2018-19",
 				info: "Achieved school rank 2 in National Science Talent Search Examination",
@@ -40,7 +68,7 @@ class Achievements extends React.Component {
 				type: "silver",
 			},
 			{
-				key: 3,
+				key: 7,
 				title:
 					"School Rank 1 - National Science Talent Search Examination 2019-20",
 				info: "Achieved school rank 1 in National Science Talent Search Examination",
@@ -51,14 +79,14 @@ class Achievements extends React.Component {
 				key: -1,
 			},
 			{
-				key: 7,
+				key: 8,
 				title: "Winner - Interschool Powerpoint Presentation - 2016",
 				info: "Winner of State Level Interschool Powerpoint Presentation at Confluence 2016",
 				category: "trophy",
 				type: "",
 			},
 			{
-				key: 8,
+				key: 9,
 				title:
 					"Best Powerpoint Presentation - Interschool Powerpoint Presentation - 2016",
 				info: "Best Powerpoint Presentation of State Level Interschool Powerpoint Presentation at Confluence 2016",
@@ -66,28 +94,28 @@ class Achievements extends React.Component {
 				type: "",
 			},
 			{
-				key: 9,
+				key: 10,
 				title: "3rd Position - Reliance Chess Championship",
 				info: "Secured 3rd Position at Chess Tournament held at Reliance Greens Township",
 				category: "trophy",
 				type: "",
 			},
 			{
-				key: 10,
+				key: 11,
 				title: "2nd Prize - Interhouse Web Designing Competition - 2016",
 				info: "Secured 2nd Position in Interhouse Web Designing Competition held at our school",
 				category: "certificate",
 				type: "1",
 			},
 			{
-				key: 11,
+				key: 12,
 				title: "2nd Prize - Interhouse Web Designing Competition - 2018",
 				info: "Secured 2nd Position in Interhouse Web Designing Competition held at our school",
 				category: "certificate",
 				type: "2",
 			},
 			{
-				key: 12,
+				key: 13,
 				title: "1st Prize - Interhouse Web Designing Competition - 2019",
 				info: "Secured 1st Position in Interhouse Web Designing Competition held at our school",
 				category: "certificate",
@@ -109,13 +137,14 @@ class Achievements extends React.Component {
 				<div className='table-top'>
 					{this.data.map((d) => {
 						if (d.key === -1) {
-							return <br />
+							return <br key={d.key} />
 						}
 						if (d.category === "medal") {
 							return (
 								<div
 									className='achievement'
 									id={d.key}
+									key={d.key}
 									onMouseEnter={() => this.displaydata(d)}>
 									<div className={"glow medal-" + d.type}></div>
 								</div>
@@ -125,6 +154,7 @@ class Achievements extends React.Component {
 								<div
 									className='achievement'
 									id={d.key}
+									key={d.key}
 									onMouseEnter={() => this.displaydata(d)}
 									style={{
 										marginTop: "50px",
@@ -139,6 +169,7 @@ class Achievements extends React.Component {
 								<div
 									className={"achievement" + d.category}
 									id={d.key}
+									key={d.key}
 									onMouseEnter={() => this.displaydata(d)}>
 									<div className={"glow certificate rotate" + d.type}></div>
 								</div>
