@@ -111,10 +111,10 @@
 .ss-text {
 	position: absolute;
     display: grid;
-    top: 22vh;
+    top: 19vh;
     width: 96%;
     grid-template-columns: 44% 44%;
-    grid-template-rows: 23vh auto;
+    grid-template-rows: 19vh auto;
     text-align: center;
     font-family: 'Montserrat';
     left: 9%;

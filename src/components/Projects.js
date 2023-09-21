@@ -26,6 +26,7 @@ import SS10 from "../imgs/Projects/SS10-min.jpg"
 import SS11 from "../imgs/Projects/SS11-min.jpg"
 import SS12 from "../imgs/Projects/SS12-min.jpg"
 import SS13 from "../imgs/Projects/SS13-min.jpg"
+import SS14 from "../imgs/Projects/SS14-min.png"
 
 SwiperCore.use([Navigation, EffectCoverflow, Pagination])
 
@@ -156,15 +157,46 @@ function Projects() {
 				</SwiperSlide>
 				<SwiperSlide
 					style={{
+						backgroundImage: `url(${SS14})`,
+					}}>
+					<div className='project-detail text-white'>
+						<div className='project-title'>Hopechain</div>
+						<div className='project-context'>
+							A decentralized donations management platform to tackle the
+							world's most intimidating disasters by providing funds quickly and
+							transparently
+							<br />
+							<u>
+								Using React, Solidity, metamask, kotlin <br />
+								Ethereum, remix, polygon - 2023
+							</u>
+						</div>
+						<a
+							href='https://devfolio.co/projects/hopechain-2edc'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-github' />
+						</a>
+						<a
+							href='https://youtu.be/QigEkrAj3bk'
+							target='_blank'
+							rel='noreferrer'>
+							<div className='project-link' />
+						</a>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide
+					style={{
 						backgroundImage: `url(${SS11})`,
 					}}>
 					<div className='project-detail text-white'>
 						<div className='project-title'>cWuzzle</div>
 						<div className='project-context'>
-							An online crossword making, playing and sharing game - Built for Webster 2021
+							An online crossword making, playing and sharing game - Built for
+							Webster 2021
 							<br />
 							<u>
-								Using  Next.js, TailwindCSS, <br />
+								Using Next.js, TailwindCSS, <br />
 								FastAPI, Supabase - 2021
 							</u>
 						</div>
@@ -189,7 +221,8 @@ function Projects() {
 					<div className='project-detail text-white'>
 						<div className='project-title'>Dr.Vincent - The Game</div>
 						<div className='project-context'>
-							Devjam winning game that tackles stress and awareness issue faced during Covid Pandemic times
+							Devjam winning game that tackles stress and awareness issue faced
+							during Covid Pandemic times
 							<br />
 							<u>
 								Using Unity, C# <br />
