@@ -13,6 +13,8 @@ import Skills from "./components/Skills"
 import Work from "./components/Work"
 import Contact from "./components/Contact"
 
+alert('This was the first fancy portfolio I made in my 1st year of college, hence out of date since 2023. try and interact to enjoy the complete experience');
+
 ReactDOM.render(
 	<React.StrictMode>
 		<Navbar />
