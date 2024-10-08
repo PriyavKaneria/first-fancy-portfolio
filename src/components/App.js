@@ -2,7 +2,7 @@ import "../styles/App.css"
 import CodeBlock from "./CodeBlock"
 
 function App() {
-	var b1strings = ["Hello!", "I am Priyav Kaneria"]
+	var b1strings = ["I am Priyav Kaneria", "website was made in 1st year so all fancy fancy"]
 	var b1times = [0, 1500]
 	var b2strings = ["How are you?", "I am fine"]
 	var b2times = [6000, 2000]

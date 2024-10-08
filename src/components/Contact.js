@@ -109,14 +109,14 @@ function LanguagesAndContact() {
 						<span className='icon__name'>Github</span>
 					</a>
 				</li>
-				<li className='icon icon--gitlab'>
+				{/* <li className='icon icon--gitlab'>
 					<a
 						href='https://gitlab.com/PriyavKaneria'
 						target='_blank'
 						rel='noreferrer'>
 						<span className='icon__name'>Gitlab</span>
 					</a>
-				</li>
+				</li> */}
 				<li className='icon icon--gmail'>
 					<a
 						href='mailto:priyavkaneria+website@gmail.com'

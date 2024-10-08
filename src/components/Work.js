@@ -86,6 +86,14 @@ function Timeline() {
 • Built complete backend application compatible for CLI and web in FastAPI, Nodejs as well as GoLang
 • Managing production deployment`}
 				/>
+				<TimelineEvent
+					date='May 2023 - July 2023'
+					title='Project Intern'
+					subtitle='Oracle'
+					worktitle='My work4'
+					workdesc={`• Oracle fusion applications ERP - financials general ledger data analysis
+• Docker test suite deployment, monitoring and debugging dependencies`}
+				/>
 			</ul>
 			<div className='heading'>
 				W<br />O<br />R<br />K
